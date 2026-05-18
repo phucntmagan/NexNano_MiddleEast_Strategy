@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NexNano – Market Survey: Middle East & FeCO X3 Entry Strategy</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #E8C97A;
+    --dark: #0D0D0D;
+    --dark2: #141414;
+    --dark3: #1C1C1C;
+    --dark4: #242424;
+    --text: #E8E2D5;
+    --text-muted: #8A8070;
+    --accent: #D4502A;
+    --green: #4A9E6B;
+    --sand: #C4A882;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--dark);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* ── HEADER ─────────────────────────────── */
+  header {
+    background: var(--dark2);
+    border-bottom: 1px solid #2A2520;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 80% 50%, rgba(201,168,76,0.08) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 20% 80%, rgba(212,80,42,0.06) 0%, transparent 60%);
+  }
+
+  .header-inner {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 56px 40px 48px;
+  }
+
+  .badge {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid rgba(201,168,76,0.4);
+    padding: 5px 14px;
+    border-radius: 2px;
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 900;
+    line-height: 1.15;
+    color: #F5EDD8;
+    max-width: 720px;
+  }
+
+  h1 em {
+    font-style: normal;
+    color: var(--gold);
+  }
+
+  .header-meta {
+    margin-top: 20px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  .meta-item {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.05em;
+  }
+
+  .meta-item span { color: var(--gold-light); }
+
+  /* ── LAYOUT ─────────────────────────────── */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px 80px;
+  }
+
+  /* ── SECTION TITLES ──────────────────────── */
+  .section {
+    margin-top: 56px;
+  }
+
+  .section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(20px, 2.5vw, 28px);
+    font-weight: 700;
+    color: #F5EDD8;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #2A2520;
+    margin-bottom: 28px;
+  }
+
+  /* ── SUMMARY CARDS ───────────────────────── */
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .stat-card {
+    background: var(--dark3);
+    border: 1px solid #2A2520;
+    border-top: 2px solid var(--gold);
+    padding: 22px 24px;
+    border-radius: 4px;
+  }
+
+  .stat-card .value {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--gold-light);
+    line-height: 1;
+  }
+
+  .stat-card .label {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 6px;
+    letter-spacing: 0.04em;
+  }
+
+  .stat-card .sublabel {
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    color: var(--green);
+    margin-top: 4px;
+  }
+
+  /* ── TABLE ───────────────────────────────── */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+  }
+
+  thead tr {
+    background: var(--dark4);
+    border-bottom: 1px solid var(--gold);
+  }
+
+  thead th {
+    text-align: left;
+    padding: 12px 16px;
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid #222;
+    transition: background 0.15s;
+  }
+
+  tbody tr:hover { background: var(--dark3); }
+
+  tbody td {
+    padding: 12px 16px;
+    color: var(--text);
+    vertical-align: top;
+  }
+
+  tbody td:first-child { color: var(--gold-light); font-weight: 500; }
+
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.06em;
+  }
+
+  .tag-high { background: rgba(74,158,107,0.2); color: #6BD49A; border: 1px solid rgba(74,158,107,0.4); }
+  .tag-med { background: rgba(201,168,76,0.15); color: var(--gold-light); border: 1px solid rgba(201,168,76,0.35); }
+  .tag-low { background: rgba(212,80,42,0.15); color: #F08060; border: 1px solid rgba(212,80,42,0.35); }
+  .tag-blue { background: rgba(70,130,180,0.15); color: #90C0E8; border: 1px solid rgba(70,130,180,0.35); }
+
+  /* ── TWO-COL ─────────────────────────────── */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media(max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
+
+  .card {
+    background: var(--dark3);
+    border: 1px solid #2A2520;
+    border-radius: 4px;
+    padding: 24px;
+  }
+
+  .card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: var(--gold-light);
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2A2520;
+  }
+
+  .card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .card ul li {
+    padding: 6px 0;
+    padding-left: 16px;
+    position: relative;
+    font-size: 13.5px;
+    color: var(--text);
+    border-bottom: 1px solid #1C1C1C;
+  }
+
+  .card ul li:last-child { border-bottom: none; }
+
+  .card ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 10px;
+    top: 8px;
+  }
+
+  /* ── STRATEGY TIMELINE ───────────────────── */
+  .phase-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  @media(max-width: 700px) { .phase-grid { grid-template-columns: 1fr; } }
+
+  .phase-card {
+    background: var(--dark3);
+    border: 1px solid #2A2520;
+    border-radius: 4px;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .phase-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+  }
+
+  .phase-1::before { background: var(--gold); }
+  .phase-2::before { background: var(--accent); }
+  .phase-3::before { background: var(--green); }
+
+  .phase-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+  }
+
+  .phase-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: #F5EDD8;
+    margin-bottom: 4px;
+  }
+
+  .phase-time {
+    font-size: 11px;
+    font-family: 'DM Mono', monospace;
+    color: var(--gold);
+    margin-bottom: 14px;
+  }
+
+  .phase-card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .phase-card ul li {
+    font-size: 13px;
+    color: #B0A898;
+    padding: 5px 0;
+    padding-left: 14px;
+    position: relative;
+    border-bottom: 1px solid #222;
+  }
+
+  .phase-card ul li:last-child { border-bottom: none; }
+
+  .phase-card ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--text-muted);
+    font-size: 10px;
+  }
+
+  /* ── HIGHLIGHT BOX ───────────────────────── */
+  .highlight {
+    background: linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.03));
+    border: 1px solid rgba(201,168,76,0.3);
+    border-left: 3px solid var(--gold);
+    padding: 20px 24px;
+    border-radius: 0 4px 4px 0;
+    margin: 20px 0;
+    font-size: 14px;
+  }
+
+  .highlight strong { color: var(--gold-light); }
+
+  /* ── RISK TABLE ──────────────────────────── */
+  .risk-grid {
+    display: grid;
+    gap: 12px;
+  }
+
+  .risk-item {
+    display: grid;
+    grid-template-columns: 180px 1fr auto;
+    align-items: start;
+    gap: 16px;
+    background: var(--dark3);
+    border: 1px solid #222;
+    border-radius: 4px;
+    padding: 14px 18px;
+  }
+
+  @media(max-width: 700px) { .risk-item { grid-template-columns: 1fr; } }
+
+  .risk-name { font-size: 13.5px; font-weight: 500; color: var(--text); }
+  .risk-desc { font-size: 12.5px; color: var(--text-muted); }
+
+  /* ── FOOTER ──────────────────────────────── */
+  footer {
+    border-top: 1px solid #2A2520;
+    padding: 28px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  footer span {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+  }
+
+  /* ── DIVIDER ──────────────────────────────── */
+  .divider {
+    border: none;
+    border-top: 1px solid #222;
+    margin: 32px 0;
+  }
+
+  /* ── PROSE ───────────────────────────────── */
+  p { margin-bottom: 14px; color: #B8B0A4; font-size: 14px; }
+  p:last-child { margin-bottom: 0; }
+
+  strong { color: var(--text); }
+
+  .intro-text {
+    font-size: 15px;
+    color: #C0B8B0;
+    line-height: 1.8;
+    max-width: 820px;
+  }
+
+  /* ── MARKET SIZE VIZ ─────────────────────── */
+  .bar-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  .bar-label {
+    width: 160px;
+    font-size: 12px;
+    color: var(--text-muted);
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  .bar-track {
+    flex: 1;
+    height: 24px;
+    background: var(--dark4);
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .bar-fill {
+    height: 100%;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 11px;
+    font-family: 'DM Mono', monospace;
+    color: var(--dark);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .b1 { background: var(--gold); width: 100%; }
+  .b2 { background: rgba(201,168,76,0.75); width: 73%; }
+  .b3 { background: rgba(201,168,76,0.55); width: 55%; }
+  .b4 { background: rgba(201,168,76,0.35); width: 35%; }
+  .b5 { background: rgba(201,168,76,0.2); width: 18%; }
+
+  .note {
+    font-size: 11px;
+    font-family: 'DM Mono', monospace;
+    color: var(--text-muted);
+    margin-top: 4px;
+    letter-spacing: 0.02em;
+  }
+
+  /* ── ACTION TABLE ─────────────────────────── */
+  .action-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .action-list li {
+    display: flex;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid #222;
+    align-items: flex-start;
+  }
+
+  .action-list li:last-child { border-bottom: none; }
+
+  .action-num {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+
+  .action-body { flex: 1; }
+  .action-title { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 4px; }
+  .action-desc { font-size: 12.5px; color: var(--text-muted); }
+
+  /* ── SWOT ─────────────────────────────────── */
+  .swot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: #222;
+    border: 1px solid #222;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .swot-cell {
+    padding: 22px 24px;
+    background: var(--dark3);
+  }
+
+  .swot-cell h4 {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #2A2520;
+  }
+
+  .swot-s h4 { color: #6BD49A; }
+  .swot-w h4 { color: #F08060; }
+  .swot-o h4 { color: var(--gold); }
+  .swot-t h4 { color: #90C0E8; }
+
+  .swot-cell ul { list-style: none; }
+  .swot-cell ul li {
+    font-size: 12.5px;
+    color: #A8A098;
+    padding: 4px 0;
+    padding-left: 14px;
+    position: relative;
+  }
+
+  .swot-cell ul li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: var(--text-muted);
+  }
+
+  @media(max-width: 600px) { .swot-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-bg"></div>
+  <div class="header-inner">
+    <div class="badge">NexNano Internal Report · May 2026</div>
+    <h1>Global Vehicle Emission Market Survey<br>& <em>FeCO X3</em> Middle East Entry Strategy</h1>
+    <div class="header-meta">
+      <div class="meta-item">Prepared for <span>NexNano / Nguyễn Tiên Phúc</span></div>
+      <div class="meta-item">Focus Region <span>GCC + MENA</span></div>
+      <div class="meta-item">Product <span>FeCO X3 – Nano Fuel Optimizer</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <!-- EXECUTIVE SUMMARY -->
+  <div class="section">
+    <div class="section-label">01 · Tổng quan</div>
+    <div class="section-title">Executive Summary</div>
+    <p class="intro-text">
+      Middle East (đặc biệt là GCC) là một trong số ít thị trường toàn cầu mà <strong>đội xe diesel thương mại vẫn đang tăng trưởng mạnh</strong> trong khi các tiêu chuẩn khí thải đang siết dần. Đây là điều kiện lý tưởng cho một sản phẩm aftermarket như FeCO X3 – giúp fleet operator vừa giảm chi phí nhiên liệu, vừa đáp ứng compliance mà không cần thay xe ngay.
+    </p>
+
+    <div class="summary-grid" style="margin-top:28px">
+      <div class="stat-card">
+        <div class="value">$17.2B</div>
+        <div class="label">GCC Heavy Commercial Vehicle Market – 2024</div>
+        <div class="sublabel">↑ CAGR 5.36% → $23.5B by 2030</div>
+      </div>
+      <div class="stat-card">
+        <div class="value">$29.3B</div>
+        <div class="label">MENA Commercial Vehicle Market – 2024</div>
+        <div class="sublabel">↑ CAGR 8.67% → $48.3B by 2030</div>
+      </div>
+      <div class="stat-card">
+        <div class="value">91.9%</div>
+        <div class="label">Diesel ICE engines trong Saudi HDT fleet (2024)</div>
+        <div class="sublabel">→ Thị trường mục tiêu của FeCO X3</div>
+      </div>
+      <div class="stat-card">
+        <div class="value">$8.76B</div>
+        <div class="label">Saudi Arabia Heavy-Duty Truck Market – 2025</div>
+        <div class="sublabel">↑ CAGR 5.5% → $13.7B by 2030</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PART 1: GLOBAL CONTEXT -->
+  <div class="section">
+    <div class="section-label">02 · Bức tranh toàn cầu</div>
+    <div class="section-title">Thị trường Emission Standards Toàn Cầu</div>
+
+    <p>File báo cáo từ Verified Market Research (sample) phân tích thị trường "Vehicle Emission Standards and Impact" theo 5 khu vực địa lý, 2 nhóm end-user (Government Agencies &amp; OEMs), và 4 vehicle type. Đây là market theo nghĩa compliance &amp; technology solutions, không phải thị trường xe. Các số liệu dưới đây là từ nguồn độc lập:</p>
+
+    <div style="margin: 24px 0;">
+      <div class="bar-row"><div class="bar-label">North America</div><div class="bar-track"><div class="bar-fill b1">Lớn nhất – EPA/CARB siết chặt</div></div></div>
+      <div class="bar-row"><div class="bar-label">Europe</div><div class="bar-track"><div class="bar-fill b2">Euro 7 → thúc đẩy adoption cao</div></div></div>
+      <div class="bar-row"><div class="bar-label">Asia Pacific</div><div class="bar-track"><div class="bar-fill b3">TQ + Ấn Độ – quy mô lớn nhưng cạnh tranh</div></div></div>
+      <div class="bar-row"><div class="bar-label">MEA</div><div class="bar-track"><div class="bar-fill b4">Đang tăng tốc – regulation mới nhất 2025</div></div></div>
+      <div class="bar-row"><div class="bar-label">Latin America</div><div class="bar-track"><div class="bar-fill b5">Nhỏ nhất, tăng trưởng chậm</div></div></div>
+    </div>
+    <div class="note">*Proportional sizing dựa trên mức độ regulatory maturity và vehicle fleet size. Số liệu tuyệt đối bị redact trong file sample.</div>
+
+    <div class="highlight" style="margin-top:24px">
+      <strong>Insight quan trọng:</strong> Global vehicle emission market tập trung ở B2G (Government enforcement) và B2B (OEM compliance). Aftermarket add-on như FeCO X3 đang có white space ở nhóm <strong>fleet operators tư nhân</strong> muốn giảm chi phí vận hành + đáp ứng tighter regulations mà không cần đầu tư thay xe.
+    </div>
+  </div>
+
+  <!-- PART 2: MIDDLE EAST DEEP DIVE -->
+  <div class="section">
+    <div class="section-label">03 · Khu vực trọng điểm</div>
+    <div class="section-title">Middle East / GCC – Deep Dive</div>
+
+    <h3 style="font-family:'Playfair Display',serif;color:#D4C8A8;margin-bottom:16px;font-size:17px;">3.1 · Quy mô thị trường xe thương mại</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Phân khúc</th>
+          <th>Giá trị 2024</th>
+          <th>Dự báo</th>
+          <th>CAGR</th>
+          <th>Driver chính</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>GCC Heavy Commercial Vehicle</td>
+          <td>$17.17B</td>
+          <td>$23.49B (2030)</td>
+          <td><span class="tag tag-high">5.36%</span></td>
+          <td>Vision 2030, logistics, construction</td>
+        </tr>
+        <tr>
+          <td>GCC Light Commercial Vehicle</td>
+          <td>$8.35B</td>
+          <td>$13.36B (2030)</td>
+          <td><span class="tag tag-high">8.15%</span></td>
+          <td>E-commerce, last-mile delivery</td>
+        </tr>
+        <tr>
+          <td>MENA Commercial Vehicle (tổng)</td>
+          <td>$29.34B</td>
+          <td>$48.32B (2030)</td>
+          <td><span class="tag tag-high">8.67%</span></td>
+          <td>Logistics hubs, urbanization</td>
+        </tr>
+        <tr>
+          <td>Saudi Arabia HDT Market</td>
+          <td>$8.76B (2025)</td>
+          <td>$13.74B (2030)</td>
+          <td><span class="tag tag-high">5.5%</span></td>
+          <td>NEOM, giga-projects, oil &amp; gas</td>
+        </tr>
+        <tr>
+          <td>MEA Heavy Commercial Vehicle</td>
+          <td>$36.45B</td>
+          <td>$53.77B (2032)</td>
+          <td><span class="tag tag-med">4.98%</span></td>
+          <td>Infrastructure, cross-border trade</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="divider">
+
+    <h3 style="font-family:'Playfair Display',serif;color:#D4C8A8;margin:24px 0 16px;font-size:17px;">3.2 · Bản đồ tiêu chuẩn khí thải từng quốc gia GCC</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Quốc gia</th>
+          <th>Tiêu chuẩn hiện tại</th>
+          <th>Cơ quan quản lý</th>
+          <th>Xu hướng 2025–2026</th>
+          <th>Cơ hội FeCO X3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>UAE</td>
+          <td>ECE R49, ECE R83 (tương đương Euro 4–5)</td>
+          <td>MoIAT + GSO + ESMA</td>
+          <td>GSO MV Technical Reg 2025 (bản 2 đã ban hành)</td>
+          <td><span class="tag tag-high">Cao</span> – nhiều fleet cũ Euro 3</td>
+        </tr>
+        <tr>
+          <td>Saudi Arabia</td>
+          <td>Thấp hơn Euro 4 cho LDV; Euro III cho buses lớn</td>
+          <td>SASO</td>
+          <td>SASO 2025 draft cho xe điện + xe tự lái; diesel vẫn dominant 91.87%</td>
+          <td><span class="tag tag-high">Rất cao</span> – đội xe cũ, diesel > 90%</td>
+        </tr>
+        <tr>
+          <td>Qatar</td>
+          <td>Theo GSO standards</td>
+          <td>GSO + QSMO</td>
+          <td>Đồng bộ với GCC 2025 MY regulation</td>
+          <td><span class="tag tag-med">Trung bình</span> – đội xe nhỏ hơn</td>
+        </tr>
+        <tr>
+          <td>Kuwait</td>
+          <td>Fuel subsidized nặng, tiêu chuẩn thấp</td>
+          <td>GSO</td>
+          <td>Chưa có deadline rõ ràng cho upgrade</td>
+          <td><span class="tag tag-med">Trung bình</span></td>
+        </tr>
+        <tr>
+          <td>Oman</td>
+          <td>Chưa set rõ policy cho LDV/HDV</td>
+          <td>GSO</td>
+          <td>Đang theo hướng GSO 2025</td>
+          <td><span class="tag tag-med">Trung bình</span></td>
+        </tr>
+        <tr>
+          <td>Bahrain</td>
+          <td>Theo GSO standards</td>
+          <td>GSO + NOGA</td>
+          <td>GSO 2025 adoption</td>
+          <td><span class="tag tag-low">Thấp</span> – thị trường nhỏ</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight" style="margin-top:24px">
+      <strong>Bottom line về regulation:</strong> Toàn bộ GCC từ 2025 phải comply GSO Technical Regulations MV 2025. Saudi Arabia diesel price tăng 44% YoY (Jan 2025, lên SAR 1.66/lít). Đội xe chạy Euro 3 tiêu thụ <strong>8–10% nhiên liệu nhiều hơn</strong> Euro 6. Đây là pain point trực tiếp mà FeCO X3 giải quyết.
+    </div>
+
+    <hr class="divider">
+
+    <h3 style="font-family:'Playfair Display',serif;color:#D4C8A8;margin:24px 0 16px;font-size:17px;">3.3 · Phân tích theo ngành – Đối tượng mục tiêu tại Middle East</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Ngành</th>
+          <th>Quy mô đội xe</th>
+          <th>Pain point</th>
+          <th>Fit với FeCO X3</th>
+          <th>Quốc gia focus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Logistics &amp; Transport</td>
+          <td>Lớn nhất (27.9% market share)</td>
+          <td>Fuel cost chiếm 30–40% OPEX; diesel tăng giá mạnh 2025</td>
+          <td><span class="tag tag-high">Rất cao</span></td>
+          <td>UAE (Dubai), Saudi Arabia</td>
+        </tr>
+        <tr>
+          <td>Construction &amp; Infrastructure</td>
+          <td>Lớn (Vision 2030 projects)</td>
+          <td>Máy đào, xe tải công trình chạy diesel liên tục; thay máy tốn kém</td>
+          <td><span class="tag tag-high">Cao</span></td>
+          <td>Saudi Arabia (NEOM, Riyadh)</td>
+        </tr>
+        <tr>
+          <td>Oil &amp; Gas</td>
+          <td>Đội xe chuyên dụng lớn</td>
+          <td>Hoạt động liên tục 24/7; engine wear &amp; fuel consumption cao</td>
+          <td><span class="tag tag-high">Cao</span></td>
+          <td>Saudi Arabia, Kuwait, Qatar</td>
+        </tr>
+        <tr>
+          <td>Public Transport (Buses)</td>
+          <td>Lớn – bắt buộc Euro III tại Riyadh, Jeddah</td>
+          <td>Compliance cost; đội xe cũ chưa đạt tiêu chuẩn</td>
+          <td><span class="tag tag-med">Trung bình–Cao</span></td>
+          <td>Saudi Arabia, UAE</td>
+        </tr>
+        <tr>
+          <td>Tourism &amp; Hospitality Fleet</td>
+          <td>Đang tăng mạnh (UAE, KSA)</td>
+          <td>Fleet management cost; brand image về sustainability</td>
+          <td><span class="tag tag-med">Trung bình</span></td>
+          <td>UAE, Saudi Arabia</td>
+        </tr>
+        <tr>
+          <td>E-commerce Last-Mile (LCV)</td>
+          <td>Tăng trưởng mạnh 8.15% CAGR</td>
+          <td>Đội xe nhỏ; chi phí vận hành per unit cao</td>
+          <td><span class="tag tag-med">Trung bình</span></td>
+          <td>UAE, Saudi Arabia</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- PART 3: SWOT -->
+  <div class="section">
+    <div class="section-label">04 · Phân tích nội tại</div>
+    <div class="section-title">SWOT – FeCO X3 tại thị trường Middle East</div>
+
+    <div class="swot-grid">
+      <div class="swot-cell swot-s">
+        <h4>Strengths – Điểm mạnh</h4>
+        <ul>
+          <li>Sản phẩm aftermarket – lắp được lên đội xe hiện hữu, không cần thay xe</li>
+          <li>ROI rõ ràng: tiết kiệm 10–20% nhiên liệu, thuyết phục fleet manager</li>
+          <li>Công nghệ nano từ Taiwan – credibility tốt ở GCC (thích hàng "high-tech")</li>
+          <li>Đã có giấy bảo hành, chứng nhận kỹ thuật, brochure chuyên nghiệp</li>
+          <li>Chi phí thấp hơn nhiều so với thay xe hoặc EV conversion</li>
+        </ul>
+      </div>
+      <div class="swot-cell swot-w">
+        <h4>Weaknesses – Điểm yếu</h4>
+        <ul>
+          <li>NexNano chưa có track record tại GCC; brand awareness = 0</li>
+          <li>Thiếu kinh nghiệm vận hành tại thị trường Arab/Islamic</li>
+          <li>Cần partner/distributor có sẵn network tại UAE, Saudi</li>
+          <li>Quy mô nhỏ (10 nhân viên) – khó đáp ứng nếu scale nhanh</li>
+          <li>Chưa có case study từ thị trường Trung Đông</li>
+        </ul>
+      </div>
+      <div class="swot-cell swot-o">
+        <h4>Opportunities – Cơ hội</h4>
+        <ul>
+          <li>Saudi diesel giá tăng 44% YoY (2025) → fleet urgently cần giảm fuel cost</li>
+          <li>91.87% HDT fleet vẫn là diesel ICE → thị trường addressable cực lớn</li>
+          <li>GCC siết regulation 2025 → fleet operator cần solution compliance</li>
+          <li>Vision 2030 tạo hàng nghìn fleet mới cho construction &amp; logistics</li>
+          <li>UAE Dubai là cửa ngõ – logistics hub, dễ B2B tiếp cận fleet manager</li>
+          <li>Middle East thích "technology from Asia" – Taiwan brand tốt</li>
+        </ul>
+      </div>
+      <div class="swot-cell swot-t">
+        <h4>Threats – Rủi ro</h4>
+        <ul>
+          <li>Xu hướng electrification dài hạn có thể thu hẹp ICE fleet sau 2030</li>
+          <li>Đối thủ cạnh tranh: sản phẩm tương tự từ EU, Trung Quốc đã có mặt</li>
+          <li>Rào cản văn hóa: quyết định mua tại GCC phụ thuộc vào mối quan hệ cá nhân</li>
+          <li>Yêu cầu SASO/ESMA certification để bán chính thức tại Saudi/UAE</li>
+          <li>Fuel subsidies tại Kuwait làm giảm động lực tiết kiệm fuel</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- PART 4: STRATEGY -->
+  <div class="section">
+    <div class="section-label">05 · Chiến lược thâm nhập</div>
+    <div class="section-title">FeCO X3 Market Entry Strategy – Middle East</div>
+
+    <p>Dựa trên bối cảnh thị trường, NexNano nên tiếp cận theo mô hình <strong>"UAE first, Saudi scale"</strong> – dùng Dubai làm beachhead (thị trường dễ tiếp cận nhất, pháp lý thoáng, nhiều fleet operator quốc tế) trước khi tấn công Saudi Arabia (thị trường lớn nhất nhưng phức tạp hơn).</p>
+
+    <div class="phase-grid" style="margin-top:24px">
+      <div class="phase-card phase-1">
+        <div class="phase-num">Phase 01</div>
+        <div class="phase-title">Beachhead – UAE (Dubai)</div>
+        <div class="phase-time">Tháng 1–6 từ khi khởi động</div>
+        <ul>
+          <li>Tìm 1 authorised distributor tại UAE có network vào logistics fleet</li>
+          <li>Xin ESMA/MoIAT product registration cho FeCO X3</li>
+          <li>Pilot với 1–2 fleet operator lớn (50–100 xe) để build case study</li>
+          <li>Tham dự Automechanika Dubai (tháng 6 hàng năm)</li>
+          <li>Đăng ký gian hàng / networking tại GITEX hoặc logistic expo</li>
+          <li>Thiết lập hiện diện pháp lý (free zone entity không bắt buộc nhưng nên có)</li>
+        </ul>
+      </div>
+      <div class="phase-card phase-2">
+        <div class="phase-num">Phase 02</div>
+        <div class="phase-title">Mở rộng – Saudi Arabia</div>
+        <div class="phase-time">Tháng 7–18</div>
+        <ul>
+          <li>Xin SASO Technical Certification tại Saudi Arabia</li>
+          <li>Đàm phán với Saudi distributor có access vào construction &amp; logistics fleet</li>
+          <li>Target: Eastern Province (oil &amp; gas fleet, petrochemical logistics)</li>
+          <li>Riyadh: fleet của các tập đoàn xây dựng giga-projects</li>
+          <li>Pitch trực tiếp cho Aldrees, APSCO, Petromin (fleet management players)</li>
+          <li>Leverage case study từ UAE để credibility</li>
+        </ul>
+      </div>
+      <div class="phase-card phase-3">
+        <div class="phase-num">Phase 03</div>
+        <div class="phase-title">GCC Expansion</div>
+        <div class="phase-time">Năm 2–3</div>
+        <ul>
+          <li>Qatar: dựa vào distributor UAE hoặc Saudi lan sang</li>
+          <li>Kuwait: phân tích lại ROI do fuel subsidies</li>
+          <li>Oman: construction &amp; logistics fleet đang tăng</li>
+          <li>Build regional master distributor model</li>
+          <li>Consider GCC-wide maintenance &amp; warranty network</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <h3 style="font-family:'Playfair Display',serif;color:#D4C8A8;margin-bottom:16px;font-size:17px;">Mô hình Go-to-Market chi tiết</h3>
+
+    <div class="two-col">
+      <div class="card">
+        <h3>Channel Strategy</h3>
+        <ul>
+          <li><strong>Priority 1:</strong> Tìm 1 Master Distributor UAE có: (a) fleet contacts sẵn, (b) technical team lắp đặt, (c) warehouse Dubai</li>
+          <li><strong>Priority 2:</strong> Direct B2B với fleet operator > 200 xe – tiếp cận Fleet Manager hoặc Procurement Director</li>
+          <li><strong>Priority 3:</strong> Thông qua fleet management companies (Zain KSA, PetroApp-type platforms)</li>
+          <li><strong>Tránh:</strong> Retail / consumer channel – không phù hợp với B2B positioning</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Value Proposition cho GCC Fleet Operators</h3>
+        <ul>
+          <li><strong>ROI đầu tiên:</strong> "Tiết kiệm X% nhiên liệu → hoàn vốn trong Y tháng" – số cụ thể từ pilot</li>
+          <li><strong>Compliance angle:</strong> Giảm khí thải → hỗ trợ đạt GSO/SASO regulation mới</li>
+          <li><strong>Engine longevity:</strong> Quan trọng với fleet cũ vì chi phí thay engine rất cao</li>
+          <li><strong>ESG narrative:</strong> Dùng được trong báo cáo CSR / sustainability của doanh nghiệp GCC</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Định giá tại thị trường GCC</h3>
+        <ul>
+          <li>GCC purchasing power cao hơn Việt Nam; margin có thể rộng hơn</li>
+          <li>Tham chiếu: giá bán lẻ tại VN ~20tr VND/bộ → GCC nên pricing USD 1,000/set</li>
+          <li>Fleet deal (> 50 xe): discount volume, kèm maintenance contract</li>
+          <li>Cần tránh pricing quá thấp – sẽ tạo nghi ngờ về chất lượng</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Certification &amp; Compliance cần làm ngay</h3>
+        <ul>
+          <li><strong>ESMA/MoIAT (UAE):</strong> Product registration – đây là cổng vào GCC nhanh nhất</li>
+          <li><strong>SASO (Saudi Arabia):</strong> Khi đã có UAE registration, việc Saudi dễ hơn</li>
+          <li><strong>GSO Recognition:</strong> Nếu đã có một nước GCC công nhận, các nước khác dễ theo</li>
+          <li><strong>Test reports:</strong> Cần lab test report từ bên thứ 3 được công nhận tại GCC</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- PART 5: ACTION PLAN -->
+  <div class="section">
+    <div class="section-label">06 · Hành động cụ thể</div>
+    <div class="section-title">10 Bước Ưu Tiên Để Vào Middle East</div>
+
+    <ul class="action-list">
+      <li>
+        <div class="action-num">01</div>
+        <div class="action-body">
+          <div class="action-title">Chuẩn bị hồ sơ kỹ thuật tiếng Anh đầy đủ</div>
+          <div class="action-desc">Technical datasheet, lab test report (cần bên thứ 3 accredited), installation guide tiếng Anh, warranty policy. Đây là tài liệu bắt buộc để tiếp cận bất kỳ distributor hoặc fleet operator GCC nào.</div>
+        </div>
+      </li>
+      <li>
+        <div class="action-num">02</div>
+        <div class="action-body">
+          <div class="action-title">Tham dự Automechanika Dubai 2026 (tháng 6)</div>
+          <div class="action-desc">Trade show quan trọng nhất cho automotive aftermarket tại Middle East. Cơ hội gặp trực tiếp fleet managers, distributors, workshop operators. Chi phí thuê gian có thể dùng chung với distributor hoặc FIREWIND nếu họ muốn mở rộng thị trường.</div>
+        </div>
+      </li>
+      <li>
+        <div class="action-num">03</div>
+        <div class="action-body">
+          <div class="action-title">Tiếp cận UAE distributor qua LinkedIn/GITEX network</div>
+          <div class="action-desc">Tìm distributor UAE chuyên về truck parts, fleet maintenance, hoặc fuel additives. Ưu tiên đơn vị đã có ESMA/MoIAT track record và access vào logistics fleet tại Dubai/Abu Dhabi.</div>
+        </div>
+      </li>
+      <li>
+        <div class="action-num">04</div>
+        <div class="action-body">
+          <div class="action-title">Pilot deal cụ thể: 50 xe logistics fleet tại Dubai</div>
+          <div class="action-desc">Đề xuất pilot với phí ưu đãi + đo đạc fuel saving rõ ràng. Case study từ đây là vũ khí marketing mạnh nhất để thuyết phục fleet khác. Nên có independent measurement (GPS fuel tracking).</div>
+        </div>
+      </li>
+      <li>
+        <div class="action-num">05</div>
+        <div class="action-body">
+          <div class="action-title">Khởi động ESMA product registration song song với pilot</div>
+          <div class="action-desc">ESMA (UAE) là cơ quan dễ tiếp cận nhất trong GCC, và UAE registration có thể leverage sang các quốc gia khác. Cần agent/consultant local để xử lý hồ sơ tiếng Arabic.</div>
+        </div>
+      </li>
+      <li>
+        <div class="action-num">06</div>
+        <div class="action-body">
+          <div class="action-title">Xây dựng ROI Calculator cho fleet operator GCC</div>
+          <div class="action-desc">Tool tính toán: số xe × fuel consumption × giá diesel GCC × % saving = tiền tiết kiệm/năm → payback period. Cần version tiếng Anh, đơn vị USD, giá diesel GCC thực tế. Đây là công cụ bán hàng quan trọng nhất tại thị trường này.</div>
+        </div>
+      </li>
+      <li>
+        <div class="action-num">07</div>
+        <div class="action-body">
+          <div class="action-title">Build Arabic-language marketing materials tối thiểu</div>
+          <div class="action-desc">Không cần toàn bộ website Arabic, nhưng cần: 1-page product overview bằng tiếng Arab, và business card/intro bằng Arab. Thể hiện sự tôn trọng với thị trường và tăng độ tin cậy.</div>
+        </div>
+      </li>
+      <li>
+        <div class="action-num">08</div>
+        <div class="action-body">
+          <div class="action-title">Liên hệ Vietnam Trade Office tại UAE và Saudi Arabia</div>
+          <div class="action-desc">Thương vụ Việt Nam tại UAE (Dubai) và Saudi Arabia có thể kết nối với các doanh nghiệp, cung cấp danh sách distributor, và hỗ trợ tham gia hội chợ thương mại với chi phí thấp hơn.</div>
+        </div>
+      </li>
+      <li>
+        <div class="action-num">09</div>
+        <div class="action-body">
+          <div class="action-title">Phối hợp với FIREWIND Technology (nhà sản xuất) về GCC expansion</div>
+          <div class="action-desc">FIREWIND có thể đã có interest hoặc contacts tại GCC. Nên thảo luận về: (a) exclusive territory rights cho NexNano tại GCC, (b) hỗ trợ lab test reports phù hợp GCC standards, (c) co-marketing budget.</div>
+        </div>
+      </li>
+      <li>
+        <div class="action-num">10</div>
+        <div class="action-body">
+          <div class="action-title">Target 2 fleet operator Saudi Arabia: construction + oil &amp; gas</div>
+          <div class="action-desc">Sau khi có case study UAE, tiếp cận procurement của các tập đoàn như Saudi Aramco contractors, SABIC logistics, Al-Muhaidib Group (construction). Eastern Province là vùng ưu tiên do mật độ fleet cao nhất (31.25% market share).</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- PART 6: RISKS -->
+  <div class="section">
+    <div class="section-label">07 · Quản trị rủi ro</div>
+    <div class="section-title">Risk Map &amp; Mitigation</div>
+
+    <div class="risk-grid">
+      <div class="risk-item">
+        <div class="risk-name">Rủi ro Certification</div>
+        <div class="risk-desc">ESMA/SASO không approve hoặc process kéo dài > 12 tháng. Mitigation: thuê local compliance consultant từ đầu; parallelize với pilot deal không yêu cầu full certification.</div>
+        <span class="tag tag-med">Medium</span>
+      </div>
+      <div class="risk-item">
+        <div class="risk-name">Rủi ro Distributor</div>
+        <div class="risk-desc">Distributor GCC lấy exclusive rồi không hoạt động hiệu quả. Mitigation: hợp đồng phân phối có KPI tối thiểu, clause thu hồi exclusivity nếu không đạt.</div>
+        <span class="tag tag-high">High</span>
+      </div>
+      <div class="risk-item">
+        <div class="risk-name">Rủi ro EV Transition</div>
+        <div class="risk-desc">Fleet electrification nhanh hơn dự kiến → thu hẹp addressable market. Mitigation: ICE fleet tại GCC sẽ dominant đến ít nhất 2030–2035 (91.87% diesel hiện tại). Window vẫn còn dài.</div>
+        <span class="tag tag-low">Low (dài hạn)</span>
+      </div>
+      <div class="risk-item">
+        <div class="risk-name">Rủi ro Geopolitics</div>
+        <div class="risk-desc">Bất ổn khu vực ảnh hưởng logistics và đầu tư. Mitigation: UAE Dubai là thị trường ổn định và trung lập nhất trong GCC; ưu tiên UAE trước.</div>
+        <span class="tag tag-low">Low–Medium</span>
+      </div>
+      <div class="risk-item">
+        <div class="risk-name">Rủi ro Pricing Pressure</div>
+        <div class="risk-desc">Đối thủ TQ cạnh tranh giá thấp hơn. Mitigation: positioning rõ ràng là "Taiwan technology + proven ROI" thay vì cạnh tranh giá; target mid-to-large fleet có focus vào TCO.</div>
+        <span class="tag tag-med">Medium</span>
+      </div>
+      <div class="risk-item">
+        <div class="risk-name">Rủi ro Capacity</div>
+        <div class="risk-desc">NexNano (10 người) không đủ năng lực xử lý đơn hàng lớn từ GCC. Mitigation: ký MOU trước khi cam kết volume; build supply chain với Thuận Dương; không thâm nhập quá 2 thị trường cùng lúc.</div>
+        <span class="tag tag-high">High (cần monitor)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLOSING -->
+  <div class="section">
+    <div class="highlight">
+      <strong>Kết luận chiến lược:</strong> Middle East – đặc biệt UAE và Saudi Arabia – là thị trường xuất khẩu rất phù hợp cho FeCO X3 trong giai đoạn 2026–2028. Lý do: đội xe diesel commercial khổng lồ đang chịu áp lực giá nhiên liệu tăng + regulation siết dần, nhưng chưa sẵn sàng/không đủ ngân sách để electrify. FeCO X3 đánh vào exact pain point đó. Cửa vào khả thi nhất là <strong>Automechanika Dubai 2026 + UAE distributor + pilot fleet deal</strong> trước khi scale sang Saudi Arabia.
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <span>NexNano Internal · Confidential</span>
+  <span>Prepared May 2026 · Sources: Verified Market Research (sample), Grand View Research, Future Market Insights, Mordor Intelligence, UNEP, Compliance &amp; Risks</span>
+</footer>
+
+</body>
+</html>
